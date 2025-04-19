@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pr.3vTph</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="st.css">
+</head>
+<body>
+
+<div class="parallelogram" id="one"></div>
+<div class="parallelogram" id="two"></div>
+<div class="parallelogram" id="three"></div>
+<div class="parallelogram" id="four"></div>
+<div class="parallelogram" id="five"></div>
+<div class="parallelogram" id="six"></div>
+
+<div class="info-circle">i</div>
+<div class="info-popup">[HArch]<br></div>
+
+<h1>Horizon<br></h1>
+
+<label for="location">Выберитe:</label>
+<select id="location">
+    <option value="">-???-</option>
+    <option value="a">Бар</option>
+    <option value="b">Бар «Пьяный Гейгер»</option>
+    <option value="c">Северная зона</option>
+    <option value="d">Любеч-3</option>
+</select>
+
+<div id="rebarter" style="display:none;">
+    <div id="rebarterInputs"></div>
+
+    <label for="itemName">Название:</label>
+    <input type="text" id="itemName" placeholder="...">
+
+    <div class="button-container">
+        <button onclick="outputFormattedResult()">Рассчитать</button>
+        <button class="reset-button" type="button" onclick="resetFormA()">Сбросить</button>
+    </div>
+</div>
+
+<div class="result" id="result" style="display:none;"></div>
+
+<table class="price-table">
+   <thead>
+      <tr>
+         <th>Бартер</th>
+         <th>Стоимость</th>
+      </tr>
+   </thead>
+   <tbody>
+    <tr><td>Росток чернобыльской ромашки</td><td>4</td></tr>
+    <tr><td>Остатки Радиопередатчика</td><td>4</td></tr>
+    <tr><td>Рассольник</td><td>4</td></tr>
+    <tr><td>Фрагменты данных «Альфа»</td><td>21</td></tr>
+    <tr><td>Северный мох</td><td>5</td></tr>
+    <tr><td>Остатки аккумулятора</td><td>7</td></tr>
+    <tr><td>Дурман-камень</td><td>8</td></tr>
+    <tr><td>Фрагменты данных «Бета»</td><td>40</td></tr>
+    <tr><td>Квантовая батарея</td><td>42</td></tr>
+    <tr><td>Рыжий папоротник</td><td>10</td></tr>
+    <tr><td>Остатки пси-маячка</td><td>7</td></tr>
+    <tr><td>Вещество 07270</td><td>8</td></tr>
+    <tr><td>Фрагменты данных «Гамма»</td><td>66</td></tr>
+    <tr><td>Горьколистник</td><td>12</td></tr>
+    <tr><td>Лимб</td><td>15</td></tr>
+    <tr><td>Лимбоплазма</td><td>200</td></tr>
+    <tr><td>Фрагменты данных «Лямбда»</td><td>86</td></tr>
+    <tr><td>Аномальная батарея</td><td>240</td></tr>
+ </tbody>
+</table>
+
+<script src="./sc.js"></script> 
+</body>
+</html>
