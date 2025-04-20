@@ -3,6 +3,21 @@ function formatNumberWithSpaces(num) {
 }
 
 const rebarterData = {
+    g: {
+        name: "Болота",
+        rebarter: [
+            {name: "Болотный камень", cost: 2},
+            {name: "Зеленая плесень", cost: 1}
+        ]
+    },
+    f: {
+        name: "Обочина",
+        rebarter: [
+            {name: "Корень-вонючка", cost: 3},
+            {name: "Срачник", cost: 4},
+            {name: "Остатки медной проволоки", cost: 4}
+        ]
+    },
     a: {
         name: "Бар",
         rebarter: [
@@ -96,7 +111,7 @@ function outputFormattedResult() {
 function resetFormA() {
     const rebarterInputs = document.querySelectorAll('#rebarterInputs input[type="number"]');
     rebarterInputs.forEach(input => {
-        input.value = '0';
+        input.value = '';
     });
     document.getElementById('itemName').value = '';
 }
