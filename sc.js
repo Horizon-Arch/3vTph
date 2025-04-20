@@ -57,7 +57,7 @@ document.getElementById('location').addEventListener('change', function() {
             const inputDiv = document.createElement('div');
             inputDiv.innerHTML = `
                 <label>${material.name}:</label>
-                <input type='number' id='${material.name.replace(/\s+/g, '_')}' min='0' value='0'>
+                <input type='number' id='${material.name.replace(/\s+/g, '_')}' min='' value=''>
             `;
             rebarterInputs.appendChild(inputDiv);
         });
