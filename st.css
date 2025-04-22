@@ -217,6 +217,12 @@
             color: #FFFFFF;
         }
 
+        @media (max-width: 767px) {
+            .price-table {
+                display: none !important;
+            }
+        }
+
         .weapon-table {
             margin-top: 20px;
             width: auto;
