@@ -217,12 +217,6 @@
             color: #FFFFFF;
         }
 
-@media (hover: none) and (pointer: coarse) {
-    .price-table {
-        display: none !important;
-    }
-}
-
         .weapon-table {
             margin-top: 20px;
             width: auto;
