@@ -72,7 +72,7 @@ document.getElementById('location').addEventListener('change', function() {
             const inputDiv = document.createElement('div');
             inputDiv.innerHTML = `
                 <label>${material.name}:</label>
-                <input type='number' id='${material.name.replace(/\s+/g, '_')}' min='0' value=''>
+                <input type='number' id='${material.name.replace(/\s+/g, '_')}' min='0' value='' onkeydown='return (event.keyCode >= 48 && event.keyCode <= 57) || (event.keyCode >= 96 && event.keyCode <= 105) || event.keyCode === 8 || event.keyCode === 9 || event.keyCode === 46'>
             `;
             rebarterInputs.appendChild(inputDiv);
         });
