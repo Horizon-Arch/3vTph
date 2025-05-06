@@ -97,7 +97,7 @@ function outputFormattedResult() {
         
         if (quantity > 0) {
             const materialCost = quantity * material.cost; 
-            outputDetails += `> ${material.name}: ${formatNumberWithSpaces(materialCost)};\n`;
+            outputDetails += `> ${material.name} x${formatNumberWithSpaces(quantity)}: **${formatNumberWithSpaces(materialCost)}**;\n`;
             totalCost += materialCost; 
         }
     });
